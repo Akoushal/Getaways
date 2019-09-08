@@ -28,7 +28,12 @@ class ViewController: UIViewController {
     private lazy var activityIndicator: UIActivityIndicatorView = {
         let actInd = UIActivityIndicatorView(frame: .zero)
         actInd.translatesAutoresizingMaskIntoConstraints = false
-        actInd.style = .large
+        if #available(iOS 13.0, *) {
+            actInd.style = .large
+        } else {
+            actInd.style = .whiteLarge
+        }
+        
         actInd.startAnimating()
         actInd.hidesWhenStopped = true
         return actInd
@@ -104,7 +109,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .lightGray
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "iconSettings"), style: .plain, target: self, action: #selector(settingsButtonPressed))
         navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.tintColor = .black
     }
     
     private func setUpUISubviews() {
