@@ -40,7 +40,7 @@ class VenueCell: UITableViewCell {
         categoryImageView.sd_setImage(with: url, placeholderImage: UIImage(named: "iconPlaceholder"))
         addressLabel.text = "\(address), \(city), \(country)"
         distanceLabel.text = "\(distance) meters"
-        statusLabel.text = isOpen ? "Open Now" : "Closed"
+        statusLabel.text = isOpen ? "Open" : "Closed"
         statusLabel.textColor = isOpen ? StatusColor.isOpened : StatusColor.isClosed
     }
 }

@@ -12,8 +12,8 @@ import UIKit
 struct Configuration {
     static let title = "Getaways Nearby"
     static let BaseURL = "https://api.foursquare.com/v2"
-    static let ClientId = "MYNE2GVRC5ITHIEKV03ZINVN0CBGEGIC35DCN3ZTEDPHBVG4"
-    static let ClientSecret = "JSN0XZTPD5LEOQM12ODGBVYAIHRXBM2XEUGKMDLOIDSSM1FY"
+    static let ClientId = "GPVQONCFYVIVCYFNVY1YTZ3GAHRWXBOGEZWLYT40IDCXHBWG" // Sample for test
+    static let ClientSecret = "XCI2H3XHXBZBVHQKCE0T13SJBDSE55E4PLBGQS3FQYCXY5A4" // Sample for test
     static let NoVenuesAlert = "No getaways nearby. Try to expand the search area !!"
 }
 

@@ -12,7 +12,7 @@ import CoreLocation
 class ViewController: UIViewController {
 
     //MARK: - Lazy Initializers & Variables
-    private lazy var venueListTableView: UITableView = {
+    internal lazy var venueListTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .lightGray
@@ -109,7 +109,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .lightGray
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "iconSettings"), style: .plain, target: self, action: #selector(settingsButtonPressed))
         navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.tintColor = .black
+        navigationController?.navigationBar.tintColor = .lightGray
     }
     
     private func setUpUISubviews() {

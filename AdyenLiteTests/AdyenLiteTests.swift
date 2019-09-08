@@ -7,28 +7,72 @@
 //
 
 import XCTest
+import CoreLocation
 @testable import AdyenLite
 
 class AdyenLiteTests: XCTestCase {
 
+    var srt: DataService?
+    let contactMockedJSON: [String: Any] = ["id":8892, "first_name":"Amitabh", "last_name":"Bachchan", "profile_pic":"/images/missing.png", "favorite":true, "url":"http://gojek-contacts-app.herokuapp.com/contacts/8892.json"]
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        srt = DataService()
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        srt = nil
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    /*
+     // Test: For checking Tableview Existence
+     */
+    func test_ControllerHasTableView() {
+        let controller = ViewController()
+        controller.loadViewIfNeeded()
+        
+        XCTAssertNotNil(controller.venueListTableView,
+                        "Controller should have a tableview")
     }
+    
+    /*
+     // Test: For checking Tableview conforms to TableViewDatasource
+     */
+    func test_tableViewConformsToTableViewDataSourceProtocol() {
+        let controller = ViewController()
+        XCTAssertTrue(controller.conforms(to: UITableViewDataSource.self))
+        XCTAssertTrue(controller.responds(to: #selector(controller.tableView(_:numberOfRowsInSection:))))
+        XCTAssertTrue(controller.responds(to: #selector(controller.tableView(_:cellForRowAt:))))
+    }
+    
+    /*
+     // Test: For FetchVenueList API
+     */
+    func test_fetchVenueList() {
+        // Given Apiservice
+        let srt = self.srt!
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        // When fetch data
+        let expect = XCTestExpectation(description: "callback")
+
+        srt.fetchVenues(coordinate: CLLocationCoordinate2D(latitude: 52.376510, longitude: 4.905960), radius: 100) { (venues, error) in
+            expect.fulfill()
+            XCTAssertTrue(venues?.count ?? 0 > 0, "Venues Exist")
         }
+
+        wait(for: [expect], timeout: 10.0)
     }
 
+    /*
+     // Test: For serializing mocked JSON object into Venue Model
+     */
+    func test_serializeVenueModel() {}
+//    {
+//        guard let data = try? JSONSerialization.data(withJSONObject: contactMockedJSON, options: .prettyPrinted), let contactModel = try? JSONDecoder().decode(Venue.self, from: data) else {
+//            XCTFail()
+//            return
+//        }
+//
+//        XCTAssert(contactModel.id == 8892)
+//        XCTAssert(contactModel.firstName == "Amitabh")
+//    }
 }
