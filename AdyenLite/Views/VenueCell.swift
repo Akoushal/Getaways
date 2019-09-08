@@ -35,6 +35,13 @@ class VenueCell: UITableViewCell {
             let distance = listObj.location?.distance,
             let isOpen = listObj.isOpen
             else { return}
+        
+        nameLabel.alpha = 1.0
+        categoryLabel.alpha = 1.0
+        addressLabel.alpha = 1.0
+        statusLabel.alpha = 1.0
+        distanceLabel.alpha = 1.0
+        
         nameLabel.text = name
         categoryLabel.text = category
         categoryImageView.sd_setImage(with: url, placeholderImage: UIImage(named: "iconPlaceholder"))

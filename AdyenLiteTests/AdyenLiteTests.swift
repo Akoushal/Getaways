@@ -13,7 +13,10 @@ import CoreLocation
 class AdyenLiteTests: XCTestCase {
 
     var srt: DataService?
-    let contactMockedJSON: [String: Any] = ["id":8892, "first_name":"Amitabh", "last_name":"Bachchan", "profile_pic":"/images/missing.png", "favorite":true, "url":"http://gojek-contacts-app.herokuapp.com/contacts/8892.json"]
+    let venueMockedJSON: [String: Any] = ["id": "49b6e8d2f964a52016531fe3", "name": "Russ & Daughters",
+      "location": ["address": "179 E Houston St", "distance": 130, "city": "New York", "state": "NY", "country": "United States"],
+      "categories": ["id": "4bf58dd8d48988d1f5941735", "name": "Gourmet Shop", "pluralName": "Gourmet Shops", "shortName": "Gourmet", "icon": [ "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/food_gourmet_", "suffix": ".png"],
+          "primary": true]]
     
     override func setUp() {
         srt = DataService()
@@ -65,14 +68,9 @@ class AdyenLiteTests: XCTestCase {
     /*
      // Test: For serializing mocked JSON object into Venue Model
      */
-    func test_serializeVenueModel() {}
-//    {
-//        guard let data = try? JSONSerialization.data(withJSONObject: contactMockedJSON, options: .prettyPrinted), let contactModel = try? JSONDecoder().decode(Venue.self, from: data) else {
-//            XCTFail()
-//            return
-//        }
-//
-//        XCTAssert(contactModel.id == 8892)
-//        XCTAssert(contactModel.firstName == "Amitabh")
-//    }
+    func test_serializeVenueModel() {
+        let venueModel = Venue.init(fromDict: venueMockedJSON)
+        XCTAssert(venueModel.id == "49b6e8d2f964a52016531fe3")
+        XCTAssert(venueModel.name == "Russ & Daughters")
+    }
 }
