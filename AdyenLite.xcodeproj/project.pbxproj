@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		422D40B4232400D200030A30 /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D40B3232400D200030A30 /* VenueCell.swift */; };
+		422D40B6232400DD00030A30 /* VenueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422D40B5232400DD00030A30 /* VenueCell.xib */; };
+		422D40B8232527D600030A30 /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422D40B7232527D600030A30 /* AlertPresentable.swift */; };
+		42E8B1562323BB0000155ECD /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E8B1552323BB0000155ECD /* ServiceRequest.swift */; };
+		42F4534423222CBE00564990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4534323222CBE00564990 /* AppDelegate.swift */; };
+		42F4534623222CBE00564990 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4534523222CBE00564990 /* SceneDelegate.swift */; };
+		42F4534823222CBE00564990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4534723222CBE00564990 /* ViewController.swift */; };
+		42F4534D23222CBF00564990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F4534C23222CBF00564990 /* Assets.xcassets */; };
+		42F4535023222CBF00564990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F4534E23222CBF00564990 /* LaunchScreen.storyboard */; };
+		42F4535B23222CBF00564990 /* AdyenLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4535A23222CBF00564990 /* AdyenLiteTests.swift */; };
+		42F453812322358100564990 /* AutoLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F453702322358100564990 /* AutoLayoutHelper.swift */; };
+		42F453822322358100564990 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F453722322358100564990 /* DataService.swift */; };
+		42F453842322358100564990 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F453762322358100564990 /* Configuration.swift */; };
+		42F4538923223FB200564990 /* VenueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4538823223FB200564990 /* VenueViewModel.swift */; };
+		42F4538B23223FE300564990 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4538A23223FE300564990 /* Venue.swift */; };
+		A166876A6B3C2AD63F9F4316 /* Pods_AdyenLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16439D67FA04A7BF5CE94CA0 /* Pods_AdyenLite.framework */; };
+		FCC8F8E171D7F8D3E28CC3F6 /* Pods_AdyenLiteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FCB87881BD2F6A5A2EDB0C /* Pods_AdyenLiteTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42F4535723222CBF00564990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42F4533823222CBE00564990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42F4533F23222CBE00564990;
+			remoteInfo = AdyenLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11FCB87881BD2F6A5A2EDB0C /* Pods_AdyenLiteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdyenLiteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16439D67FA04A7BF5CE94CA0 /* Pods_AdyenLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdyenLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33C1C79DF5E9AD29B173D2AB /* Pods-AdyenLiteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdyenLiteTests.release.xcconfig"; path = "Target Support Files/Pods-AdyenLiteTests/Pods-AdyenLiteTests.release.xcconfig"; sourceTree = "<group>"; };
+		3C4733DE6C5AA58DDB72956D /* Pods-AdyenLiteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdyenLiteTests.debug.xcconfig"; path = "Target Support Files/Pods-AdyenLiteTests/Pods-AdyenLiteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		422D40B3232400D200030A30 /* VenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
+		422D40B5232400DD00030A30 /* VenueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VenueCell.xib; sourceTree = "<group>"; };
+		422D40B7232527D600030A30 /* AlertPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
+		42E8B1552323BB0000155ECD /* ServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
+		42F4534023222CBE00564990 /* AdyenLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdyenLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F4534323222CBE00564990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42F4534523222CBE00564990 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		42F4534723222CBE00564990 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42F4534C23222CBF00564990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42F4534F23222CBF00564990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42F4535123222CBF00564990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42F4535623222CBF00564990 /* AdyenLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdyenLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F4535A23222CBF00564990 /* AdyenLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdyenLiteTests.swift; sourceTree = "<group>"; };
+		42F4535C23222CBF00564990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42F453702322358100564990 /* AutoLayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutHelper.swift; sourceTree = "<group>"; };
+		42F453722322358100564990 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		42F453762322358100564990 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		42F4538823223FB200564990 /* VenueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueViewModel.swift; sourceTree = "<group>"; };
+		42F4538A23223FE300564990 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		64E28EFE46E0D324F8FD215E /* Pods-AdyenLite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdyenLite.release.xcconfig"; path = "Target Support Files/Pods-AdyenLite/Pods-AdyenLite.release.xcconfig"; sourceTree = "<group>"; };
+		6BEE1A3BDFF53FF233B039F3 /* Pods-AdyenLite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdyenLite.debug.xcconfig"; path = "Target Support Files/Pods-AdyenLite/Pods-AdyenLite.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42F4533D23222CBE00564990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A166876A6B3C2AD63F9F4316 /* Pods_AdyenLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F4535323222CBF00564990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC8F8E171D7F8D3E28CC3F6 /* Pods_AdyenLiteTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42F4533723222CBE00564990 = {
+			isa = PBXGroup;
+			children = (
+				42F4534223222CBE00564990 /* AdyenLite */,
+				42F4535923222CBF00564990 /* AdyenLiteTests */,
+				42F4534123222CBE00564990 /* Products */,
+				A33506738BA0BF6DD8846F78 /* Pods */,
+				B2D279E9617D8442D516026F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42F4534123222CBE00564990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42F4534023222CBE00564990 /* AdyenLite.app */,
+				42F4535623222CBF00564990 /* AdyenLiteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42F4534223222CBE00564990 /* AdyenLite */ = {
+			isa = PBXGroup;
+			children = (
+				42F45386232235B700564990 /* AppDelegate */,
+				42F453752322358100564990 /* Configuration */,
+				42F4536B2322358100564990 /* Helpers */,
+				42F453732322358100564990 /* Model */,
+				42F453712322358100564990 /* Service */,
+				42F453772322358100564990 /* ViewModel */,
+				42F453662322358100564990 /* Views */,
+				42F453652322356B00564990 /* Controller */,
+				42F45387232235C400564990 /* Resources */,
+				42F4535123222CBF00564990 /* Info.plist */,
+			);
+			path = AdyenLite;
+			sourceTree = "<group>";
+		};
+		42F4535923222CBF00564990 /* AdyenLiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				42F4535A23222CBF00564990 /* AdyenLiteTests.swift */,
+				42F4535C23222CBF00564990 /* Info.plist */,
+			);
+			path = AdyenLiteTests;
+			sourceTree = "<group>";
+		};
+		42F453652322356B00564990 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42F4534723222CBE00564990 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42F453662322358100564990 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				422D40B3232400D200030A30 /* VenueCell.swift */,
+				422D40B5232400DD00030A30 /* VenueCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42F4536B2322358100564990 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				42F453702322358100564990 /* AutoLayoutHelper.swift */,
+				422D40B7232527D600030A30 /* AlertPresentable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		42F453712322358100564990 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				42F453722322358100564990 /* DataService.swift */,
+				42E8B1552323BB0000155ECD /* ServiceRequest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		42F453732322358100564990 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42F4538A23223FE300564990 /* Venue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42F453752322358100564990 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				42F453762322358100564990 /* Configuration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		42F453772322358100564990 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				42F4538823223FB200564990 /* VenueViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		42F45386232235B700564990 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				42F4534323222CBE00564990 /* AppDelegate.swift */,
+				42F4534523222CBE00564990 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		42F45387232235C400564990 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42F4534C23222CBF00564990 /* Assets.xcassets */,
+				42F4534E23222CBF00564990 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A33506738BA0BF6DD8846F78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE1A3BDFF53FF233B039F3 /* Pods-AdyenLite.debug.xcconfig */,
+				64E28EFE46E0D324F8FD215E /* Pods-AdyenLite.release.xcconfig */,
+				3C4733DE6C5AA58DDB72956D /* Pods-AdyenLiteTests.debug.xcconfig */,
+				33C1C79DF5E9AD29B173D2AB /* Pods-AdyenLiteTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B2D279E9617D8442D516026F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16439D67FA04A7BF5CE94CA0 /* Pods_AdyenLite.framework */,
+				11FCB87881BD2F6A5A2EDB0C /* Pods_AdyenLiteTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42F4533F23222CBE00564990 /* AdyenLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42F4535F23222CBF00564990 /* Build configuration list for PBXNativeTarget "AdyenLite" */;
+			buildPhases = (
+				F0F24E04DA82A9632DE0429F /* [CP] Check Pods Manifest.lock */,
+				42F4533C23222CBE00564990 /* Sources */,
+				42F4533D23222CBE00564990 /* Frameworks */,
+				42F4533E23222CBE00564990 /* Resources */,
+				3C315EE31CE25F173DF4C02F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdyenLite;
+			productName = AdyenLite;
+			productReference = 42F4534023222CBE00564990 /* AdyenLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42F4535523222CBF00564990 /* AdyenLiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42F4536223222CBF00564990 /* Build configuration list for PBXNativeTarget "AdyenLiteTests" */;
+			buildPhases = (
+				939BE0789AFD009BA91A0115 /* [CP] Check Pods Manifest.lock */,
+				42F4535223222CBF00564990 /* Sources */,
+				42F4535323222CBF00564990 /* Frameworks */,
+				42F4535423222CBF00564990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42F4535823222CBF00564990 /* PBXTargetDependency */,
+			);
+			name = AdyenLiteTests;
+			productName = AdyenLiteTests;
+			productReference = 42F4535623222CBF00564990 /* AdyenLiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42F4533823222CBE00564990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Koushal, KumarAjitesh";
+				TargetAttributes = {
+					42F4533F23222CBE00564990 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					42F4535523222CBF00564990 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 42F4533F23222CBE00564990;
+					};
+				};
+			};
+			buildConfigurationList = 42F4533B23222CBE00564990 /* Build configuration list for PBXProject "AdyenLite" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42F4533723222CBE00564990;
+			productRefGroup = 42F4534123222CBE00564990 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42F4533F23222CBE00564990 /* AdyenLite */,
+				42F4535523222CBF00564990 /* AdyenLiteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42F4533E23222CBE00564990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F4535023222CBF00564990 /* LaunchScreen.storyboard in Resources */,
+				422D40B6232400DD00030A30 /* VenueCell.xib in Resources */,
+				42F4534D23222CBF00564990 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F4535423222CBF00564990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C315EE31CE25F173DF4C02F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdyenLite/Pods-AdyenLite-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdyenLite/Pods-AdyenLite-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdyenLite/Pods-AdyenLite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		939BE0789AFD009BA91A0115 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdyenLiteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0F24E04DA82A9632DE0429F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdyenLite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42F4533C23222CBE00564990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F453812322358100564990 /* AutoLayoutHelper.swift in Sources */,
+				42E8B1562323BB0000155ECD /* ServiceRequest.swift in Sources */,
+				422D40B8232527D600030A30 /* AlertPresentable.swift in Sources */,
+				42F4538B23223FE300564990 /* Venue.swift in Sources */,
+				42F4534823222CBE00564990 /* ViewController.swift in Sources */,
+				422D40B4232400D200030A30 /* VenueCell.swift in Sources */,
+				42F4538923223FB200564990 /* VenueViewModel.swift in Sources */,
+				42F4534423222CBE00564990 /* AppDelegate.swift in Sources */,
+				42F453822322358100564990 /* DataService.swift in Sources */,
+				42F453842322358100564990 /* Configuration.swift in Sources */,
+				42F4534623222CBE00564990 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F4535223222CBF00564990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F4535B23222CBF00564990 /* AdyenLiteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42F4535823222CBF00564990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42F4533F23222CBE00564990 /* AdyenLite */;
+			targetProxy = 42F4535723222CBF00564990 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42F4534E23222CBF00564990 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42F4534F23222CBF00564990 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42F4535D23222CBF00564990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42F4535E23222CBF00564990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42F4536023222CBF00564990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BEE1A3BDFF53FF233B039F3 /* Pods-AdyenLite.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 228KC334N4;
+				INFOPLIST_FILE = AdyenLite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.travel.alohaLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = AlohaLiteDevPush;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		42F4536123222CBF00564990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64E28EFE46E0D324F8FD215E /* Pods-AdyenLite.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 228KC334N4;
+				INFOPLIST_FILE = AdyenLite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.travel.alohaLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = AlohaLiteDevPush;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		42F4536323222CBF00564990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4733DE6C5AA58DDB72956D /* Pods-AdyenLiteTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AdyenLiteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AdyenLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdyenLite.app/AdyenLite";
+			};
+			name = Debug;
+		};
+		42F4536423222CBF00564990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33C1C79DF5E9AD29B173D2AB /* Pods-AdyenLiteTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AdyenLiteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AdyenLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdyenLite.app/AdyenLite";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42F4533B23222CBE00564990 /* Build configuration list for PBXProject "AdyenLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F4535D23222CBF00564990 /* Debug */,
+				42F4535E23222CBF00564990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42F4535F23222CBF00564990 /* Build configuration list for PBXNativeTarget "AdyenLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F4536023222CBF00564990 /* Debug */,
+				42F4536123222CBF00564990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42F4536223222CBF00564990 /* Build configuration list for PBXNativeTarget "AdyenLiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F4536323222CBF00564990 /* Debug */,
+				42F4536423222CBF00564990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42F4533823222CBE00564990 /* Project object */;
+}
